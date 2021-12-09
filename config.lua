@@ -1,19 +1,19 @@
 Config = {}
 
 Config.MinimalDoctors = 2
-Config.WipeInventoryOnRespawn = true
+Config.WipeInventoryOnRespawn = false
 
 Config.Locations = {
     ["checking"] = {
-	    [1] = vector3(308.19, -595.35, 43.29),
-	    [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
+	[1] = vector3(308.19, -592.87, 43.28), -- pillbox upstairs
+	[2] = vector3(-254.54, 6331.78, 32.43), -- paleto medical
     },
     ["duty"] = {
-        [1] = vector3(311.18, -599.25, 43.29),
+        [1] = vector3(1686.42, 3582.6, 35.62), --Sandy Fire
         [2] = vector3(-254.88, 6324.5, 32.58),
     },
     ["vehicle"] = {
-        [1] = vector4(294.578, -574.761, 43.179, 35.792),
+        [1] = vector4(1700.71, 3600.77, 35.44, 218.5), --Sandy Fire
         [2] = vector4(-234.28, 6329.16, 32.15, 222.5),
     },
     ["helicopter"] = {
@@ -21,7 +21,7 @@ Config.Locations = {
         [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
     },
     ["armory"] = {
-        [1] = vector3(309.93, -602.94, 43.29),
+        [1] = vector3(1687.85, 3587.07, 35.62),
         [2] = vector3(-245.13, 6315.71, 32.82),
     },
     ["roof"] = {
@@ -31,45 +31,100 @@ Config.Locations = {
         [1] = vector3(298.44, -599.7, 43.29),
     },
     ["beds"] = {
-        [1] = {coords = vector4(353.1, -584.6, 43.11, 152.08), taken = false, model = 1631638868},
-        [2] = {coords = vector4(356.79, -585.86, 43.11, 152.08), taken = false, model = 1631638868},
-        [3] = {coords = vector4(354.12, -593.12, 43.1, 336.32), taken = false, model = 2117668672},
-        [4] = {coords = vector4(350.79, -591.8, 43.1, 336.32), taken = false, model = 2117668672},
-        [5] = {coords = vector4(346.99, -590.48, 43.1, 336.32), taken = false, model = 2117668672},
-        [6] = {coords = vector4(360.32, -587.19, 43.02, 152.08), taken = false, model = -1091386327},
-        [7] = {coords = vector4(349.82, -583.33, 43.02, 152.08), taken = false, model = -1091386327},
-        [8] = {coords = vector4(326.98, -576.17, 43.02, 152.08), taken = false, model = -1091386327},
+        [1] = {coords = vector4(317.85, -585.22, 43.2, 343.45), taken = false, model = 1631638868},
+        [2] = {coords = vector4(314.49, -584.21, 43.2, 336.98), taken = false, model = 1631638868},
 	--- paleto
-	    [9] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
-        [10] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
-        [11] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
+	    [3] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
+        [4] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
+        [5] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
     },
     ["stations"] = {
-        [1] = {label = "Pillbox Hospital", coords = vector4(304.27, -600.33, 43.28, 272.249)}
+        [1] = {label = "Pillbox Hospital", coords = vector4(304.27, -600.33, 43.28, 272.249)},
+        [2] = {label = "Paleto Medical Hospital", coords = vector4(-256.89, 6321.76, 32.43, 303.87)}
     }
 }
 
 Config.AuthorizedVehicles = {
 	-- Grade 0
 	[0] = {
-		["ambulance"] = "Ambulance",
+		["ramambo"] = "Ambulance",
+        ["strecher"] = "Strecher for Ambo"
 	},
 	-- Grade 1
 	[1] = {
-		["ambulance"] = "Ambulance",
-
+        ["strecher"] = "Stretcher for Ambo",
+        ["bat1"] = "EMS Tahoe",
+		["ramambo"] = "Ambulance",
+        ["firetruk6"] = "Tanker",
+        ["m2engine"] = "Freightliner Engine",
+        ["hazmat"] = "Hazmat",
+        ["lsarroweng"] = "Engine",
+        ["enladder"] = "Ladder",
+        ["brush"] = "Brush Truck",
 	},
 	-- Grade 2
 	[2] = {
-		["ambulance"] = "Ambulance",
+        ["strecher"] = "Stretcher for Ambo",
+        ["bat1"] = "EMS Tahoe",
+		["ramambo"] = "Ambulance",
+        ["firetruk6"] = "Tanker",
+        ["m2engine"] = "Freightliner Engine",
+        ["hazmat"] = "Hazmat",
+        ["lsarroweng"] = "Engine",
+        ["enladder"] = "Ladder",
+        ["brush"] = "Brush Truck",
+	},
+    [3] = {
+        ["strecher"] = "Stretcher for Ambo",
+        ["bat1"] = "EMS Tahoe",
+		["ramambo"] = "Ambulance",
+        ["firetruk6"] = "Tanker",
+        ["m2engine"] = "Freightliner Engine",
+        ["hazmat"] = "Hazmat",
+        ["lsarroweng"] = "Engine",
+        ["enladder"] = "Ladder",
+        ["brush"] = "Brush Truck",
+	},
+    [4] = {
+        ["strecher"] = "Stretcher for Ambo",
+        ["bat1"] = "EMS Tahoe",
+		["ramambo"] = "Ambulance",
+        ["firetruk6"] = "Tanker",
+        ["m2engine"] = "Freightliner Engine",
+        ["hazmat"] = "Hazmat",
+        ["lsarroweng"] = "Engine",
+        ["enladder"] = "Ladder",
+        ["brush"] = "Brush Truck",
 	},
 	-- Grade 3
-	[3] = {
-		["ambulance"] = "Ambulance",
+	[5] = {
+        ["strecher"] = "Stretcher for Ambo",
+        ["bat1"] = "EMS Tahoe",
+		["ramambo"] = "Ambulance",
+        ["firetruk6"] = "Tanker",
+        ["m2engine"] = "Freightliner Engine",
+        ["hazmat"] = "Hazmat",
+        ["lsarroweng"] = "Engine",
+        ["enladder"] = "Ladder",
+        ["brush"] = "Brush Truck",
+		["fpiupov"] = "Marshall FPIU",
+        ["valor18tahoe"] = "Marshall Tahoe",
+        ["bat2"] = "Battalion Chief F-150"
 	},
 	-- Grade 4
-	[4] = {
-		["ambulance"] = "Ambulance",
+	[6] = {
+        ["strecher"] = "Stretcher for Ambo",
+        ["bat1"] = "EMS Tahoe",
+		["ramambo"] = "Ambulance",
+        ["firetruk6"] = "Tanker",
+        ["m2engine"] = "Freightliner Engine",
+        ["hazmat"] = "Hazmat",
+        ["lsarroweng"] = "Engine",
+        ["enladder"] = "Ladder",
+        ["brush"] = "Brush Truck",
+		["fpiupov"] = "Marshall FPIU",
+        ["valor18tahoe"] = "Marshall Tahoe",
+        ["bat2"] = "Battalion Chief F-150"
 	}
 }
 
@@ -142,7 +197,7 @@ Config.PainkillerInterval = 60 -- seconds
         NOTE: Anything under 100 and you are dead
     RegenRate :
 ]]
-Config.MaxHp = 200
+Config.MaxHp = 400
 Config.RegenRate = 0.0
 
 --[[
@@ -157,7 +212,7 @@ Config.ArmorDamage = 5
     ForceInjury : Maximum amount of damage a player can take before limb damage & effects are forced to occur
 ]]
 Config.MaxInjuryChanceMulti = 3
-Config.ForceInjury = 35
+Config.ForceInjury = 50
 Config.AlwaysBleedChance = 70
 
 --[[
@@ -443,120 +498,120 @@ Config.BoneIndexes = {
 }
 
 Config.Weapons = {
-    [`WEAPON_STUNGUN`] = Config.WeaponClasses['NONE'],
+    ["WEAPON_STUNGUN"] = Config.WeaponClasses['NONE'],
     --[[ Small Caliber ]]--
-    [`WEAPON_PISTOL`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_COMBATPISTOL`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_APPISTOL`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_COMBATPDW`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_MACHINEPISTOL`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_MICROSMG`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_MINISMG`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_PISTOL_MK2`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_SNSPISTOL`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_SNSPISTOL_MK2`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_VINTAGEPISTOL`] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_PISTOL"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_COMBATPISTOL"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_APPISTOL"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_COMBATPDW"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_MACHINEPISTOL"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_MICROSMG"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_MINISMG"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_PISTOL_MK2"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_SNSPISTOL"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_SNSPISTOL_MK2"] = Config.WeaponClasses['SMALL_CALIBER'],
+    ["WEAPON_VINTAGEPISTOL"] = Config.WeaponClasses['SMALL_CALIBER'],
 
     --[[ Medium Caliber ]]--
-    [`WEAPON_ADVANCEDRIFLE`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_ASSAULTSMG`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_BULLPUPRIFLE`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_BULLPUPRIFLE_MK2`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_CARBINERIFLE`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_CARBINERIFLE_MK2`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_COMPACTRIFLE`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_DOUBLEACTION`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_GUSENBERG`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_HEAVYPISTOL`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_MARKSMANPISTOL`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_PISTOL50`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_REVOLVER`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_REVOLVER_MK2`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_SMG`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_SMG_MK2`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_SPECIALCARBINE`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_SPECIALCARBINE_MK2`] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_ADVANCEDRIFLE"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_ASSAULTSMG"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_BULLPUPRIFLE"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_BULLPUPRIFLE_MK2"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_CARBINERIFLE"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_CARBINERIFLE_MK2"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_COMPACTRIFLE"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_DOUBLEACTION"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_GUSENBERG"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_HEAVYPISTOL"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_MARKSMANPISTOL"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_PISTOL50"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_REVOLVER"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_REVOLVER_MK2"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_SMG"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_SMG_MK2"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_SPECIALCARBINE"] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    ["WEAPON_SPECIALCARBINE_MK2"] = Config.WeaponClasses['MEDIUM_CALIBER'],
 
     --[[ High Caliber ]]--
-    [`WEAPON_ASSAULTRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_ASSAULTRIFLE_MK2`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_COMBATMG`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_COMBATMG_MK2`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_HEAVYSNIPER`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_HEAVYSNIPER_MK2`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_MARKSMANRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_MARKSMANRIFLE_MK2`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_MG`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_MINIGUN`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_MUSKET`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_RAILGUN`] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_ASSAULTRIFLE"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_ASSAULTRIFLE_MK2"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_COMBATMG"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_COMBATMG_MK2"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_HEAVYSNIPER"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_HEAVYSNIPER_MK2"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_MARKSMANRIFLE"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_MARKSMANRIFLE_MK2"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_MG"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_MINIGUN"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_MUSKET"] = Config.WeaponClasses['HIGH_CALIBER'],
+    ["WEAPON_RAILGUN"] = Config.WeaponClasses['HIGH_CALIBER'],
 
     --[[ Shotguns ]]--
-    [`WEAPON_ASSAULTSHOTGUN`] = Config.WeaponClasses['SHOTGUN'],
-    [`WEAPON_BULLUPSHOTGUN`] = Config.WeaponClasses['SHOTGUN'],
-    [`WEAPON_DBSHOTGUN`] = Config.WeaponClasses['SHOTGUN'],
-    [`WEAPON_HEAVYSHOTGUN`] = Config.WeaponClasses['SHOTGUN'],
-    [`WEAPON_PUMPSHOTGUN`] = Config.WeaponClasses['SHOTGUN'],
-    [`WEAPON_PUMPSHOTGUN_MK2`] = Config.WeaponClasses['SHOTGUN'],
-    [`WEAPON_SAWNOFFSHOTGUN`] = Config.WeaponClasses['SHOTGUN'],
-    [`WEAPON_SWEEPERSHOTGUN`] = Config.WeaponClasses['SHOTGUN'],
+    ["WEAPON_ASSAULTSHOTGUN"] = Config.WeaponClasses['SHOTGUN'],
+    ["WEAPON_BULLUPSHOTGUN"] = Config.WeaponClasses['SHOTGUN'],
+    ["WEAPON_DBSHOTGUN"] = Config.WeaponClasses['SHOTGUN'],
+    ["WEAPON_HEAVYSHOTGUN"] = Config.WeaponClasses['SHOTGUN'],
+    ["WEAPON_PUMPSHOTGUN"] = Config.WeaponClasses['SHOTGUN'],
+    ["WEAPON_PUMPSHOTGUN_MK2"] = Config.WeaponClasses['SHOTGUN'],
+    ["WEAPON_SAWNOFFSHOTGUN"] = Config.WeaponClasses['SHOTGUN'],
+    ["WEAPON_SWEEPERSHOTGUN"] = Config.WeaponClasses['SHOTGUN'],
 
     --[[ Animals ]]--
-    [`WEAPON_ANIMAL`] = Config.WeaponClasses['WILDLIFE'], -- Animal
-    [`WEAPON_COUGAR`] = Config.WeaponClasses['WILDLIFE'], -- Cougar
-    [`WEAPON_BARBED_WIRE`] = Config.WeaponClasses['WILDLIFE'], -- Barbed Wire
+    ["WEAPON_ANIMAL"] = Config.WeaponClasses['WILDLIFE'], -- Animal
+    ["WEAPON_COUGAR"] = Config.WeaponClasses['WILDLIFE'], -- Cougar
+    ["WEAPON_BARBED_WIRE"] = Config.WeaponClasses['WILDLIFE'], -- Barbed Wire
 
     --[[ Cutting Weapons ]]--
-    [`WEAPON_BATTLEAXE`] = Config.WeaponClasses['CUTTING'],
-    [`WEAPON_BOTTLE`] = Config.WeaponClasses['CUTTING'],
-    [`WEAPON_DAGGER`] = Config.WeaponClasses['CUTTING'],
-    [`WEAPON_HATCHET`] = Config.WeaponClasses['CUTTING'],
-    [`WEAPON_KNIFE`] = Config.WeaponClasses['CUTTING'],
-    [`WEAPON_MACHETE`] = Config.WeaponClasses['CUTTING'],
-    [`WEAPON_SWITCHBLADE`] = Config.WeaponClasses['CUTTING'],
+    ["WEAPON_BATTLEAXE"] = Config.WeaponClasses['CUTTING'],
+    ["WEAPON_BOTTLE"] = Config.WeaponClasses['CUTTING'],
+    ["WEAPON_DAGGER"] = Config.WeaponClasses['CUTTING'],
+    ["WEAPON_HATCHET"] = Config.WeaponClasses['CUTTING'],
+    ["WEAPON_KNIFE"] = Config.WeaponClasses['CUTTING'],
+    ["WEAPON_MACHETE"] = Config.WeaponClasses['CUTTING'],
+    ["WEAPON_SWITCHBLADE"] = Config.WeaponClasses['CUTTING'],
 
     --[[ Light Impact ]]--
-    [`WEAPON_KNUCKLE`] = Config.WeaponClasses['LIGHT_IMPACT'],
+    ["WEAPON_KNUCKLE"] = Config.WeaponClasses['LIGHT_IMPACT'],
 
     --[[ Heavy Impact ]]--
-    [`WEAPON_BAT`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_CROWBAR`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_FIREEXTINGUISHER`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_FIRWORK`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_GOLFLCUB`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_HAMMER`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_PETROLCAN`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_POOLCUE`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_WRENCH`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_RAMMED_BY_CAR`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_RUN_OVER_BY_CAR`] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_BAT"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_CROWBAR"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_FIREEXTINGUISHER"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_FIRWORK"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_GOLFLCUB"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_HAMMER"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_PETROLCAN"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_POOLCUE"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_WRENCH"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_RAMMED_BY_CAR"] = Config.WeaponClasses['HEAVY_IMPACT'],
+    ["WEAPON_RUN_OVER_BY_CAR"] = Config.WeaponClasses['HEAVY_IMPACT'],
 
     --[[ Explosives ]]--
-    [`WEAPON_EXPLOSION`] = Config.WeaponClasses['EXPLOSIVE'],
-    [`WEAPON_GRENADE`] = Config.WeaponClasses['EXPLOSIVE'],
-    [`WEAPON_COMPACTLAUNCHER`] = Config.WeaponClasses['EXPLOSIVE'],
-    [`WEAPON_HOMINGLAUNCHER`] = Config.WeaponClasses['EXPLOSIVE'],
-    [`WEAPON_PIPEBOMB`] = Config.WeaponClasses['EXPLOSIVE'],
-    [`WEAPON_PROXMINE`] = Config.WeaponClasses['EXPLOSIVE'],
-    [`WEAPON_RPG`] = Config.WeaponClasses['EXPLOSIVE'],
-    [`WEAPON_STICKYBOMB`] = Config.WeaponClasses['EXPLOSIVE'],
-    [`WEAPON_HELI_CRASH`] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_EXPLOSION"] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_GRENADE"] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_COMPACTLAUNCHER"] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_HOMINGLAUNCHER"] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_PIPEBOMB"] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_PROXMINE"] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_RPG"] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_STICKYBOMB"] = Config.WeaponClasses['EXPLOSIVE'],
+    ["WEAPON_HELI_CRASH"] = Config.WeaponClasses['EXPLOSIVE'],
 
     --[[ Other ]]--
-    [`WEAPON_FALL`] = Config.WeaponClasses['OTHER'], -- Fall
-    [`WEAPON_HIT_BY_WATER_CANNON`] = Config.WeaponClasses['OTHER'], -- Water Cannon
+    ["WEAPON_FALL"] = Config.WeaponClasses['OTHER'], -- Fall
+    ["WEAPON_HIT_BY_WATER_CANNON"] = Config.WeaponClasses['OTHER'], -- Water Cannon
 
     --[[ Fire ]]--
-    [`WEAPON_ELECTRIC_FENCE`] = Config.WeaponClasses['FIRE'],
-    [`WEAPON_FIRE`] = Config.WeaponClasses['FIRE'],
-    [`WEAPON_MOLOTOV`] = Config.WeaponClasses['FIRE'],
-    [`WEAPON_FLARE`] = Config.WeaponClasses['FIRE'],
-    [`WEAPON_FLAREGUN`] = Config.WeaponClasses['FIRE'],
+    ["WEAPON_ELECTRIC_FENCE"] = Config.WeaponClasses['FIRE'],
+    ["WEAPON_FIRE"] = Config.WeaponClasses['FIRE'],
+    ["WEAPON_MOLOTOV"] = Config.WeaponClasses['FIRE'],
+    ["WEAPON_FLARE"] = Config.WeaponClasses['FIRE'],
+    ["WEAPON_FLAREGUN"] = Config.WeaponClasses['FIRE'],
 
     --[[ Suffocate ]]--
-    [`WEAPON_DROWNING`] = Config.WeaponClasses['SUFFOCATING'], -- Drowning
-    [`WEAPON_DROWNING_IN_VEHICLE`] = Config.WeaponClasses['SUFFOCATING'], -- Drowning Veh
-    [`WEAPON_EXHAUSTION`] = Config.WeaponClasses['SUFFOCATING'], -- Exhaust
-    [`WEAPON_BZGAS`] = Config.WeaponClasses['SUFFOCATING'],
-    [`WEAPON_SMOKEGRENADE`] = Config.WeaponClasses['SUFFOCATING'],
+    ["WEAPON_DROWNING"] = Config.WeaponClasses['SUFFOCATING'], -- Drowning
+    ["WEAPON_DROWNING_IN_VEHICLE"] = Config.WeaponClasses['SUFFOCATING'], -- Drowning Veh
+    ["WEAPON_EXHAUSTION"] = Config.WeaponClasses['SUFFOCATING'], -- Exhaust
+    ["WEAPON_BZGAS"] = Config.WeaponClasses['SUFFOCATING'],
+    ["WEAPON_SMOKEGRENADE"] = Config.WeaponClasses['SUFFOCATING'],
 }
