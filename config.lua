@@ -48,11 +48,11 @@ Config.AuthorizedVehicles = {
 	-- Grade 0
 	[0] = {
 		["ramambo"] = "Ambulance",
-        ["strecher"] = "Strecher for Ambo"
+        ["stretcher"] = "Strecher for Ambo"
 	},
 	-- Grade 1
 	[1] = {
-        ["strecher"] = "Stretcher for Ambo",
+        ["stretcher"] = "Stretcher for Ambo",
         ["bat1"] = "EMS Tahoe",
 		["ramambo"] = "Ambulance",
         ["firetruk6"] = "Tanker",
@@ -64,7 +64,7 @@ Config.AuthorizedVehicles = {
 	},
 	-- Grade 2
 	[2] = {
-        ["strecher"] = "Stretcher for Ambo",
+        ["stretcher"] = "Stretcher for Ambo",
         ["bat1"] = "EMS Tahoe",
 		["ramambo"] = "Ambulance",
         ["firetruk6"] = "Tanker",
@@ -75,7 +75,7 @@ Config.AuthorizedVehicles = {
         ["brush"] = "Brush Truck",
 	},
     [3] = {
-        ["strecher"] = "Stretcher for Ambo",
+        ["stretcher"] = "Stretcher for Ambo",
         ["bat1"] = "EMS Tahoe",
 		["ramambo"] = "Ambulance",
         ["firetruk6"] = "Tanker",
@@ -86,7 +86,7 @@ Config.AuthorizedVehicles = {
         ["brush"] = "Brush Truck",
 	},
     [4] = {
-        ["strecher"] = "Stretcher for Ambo",
+        ["stretcher"] = "Stretcher for Ambo",
         ["bat1"] = "EMS Tahoe",
 		["ramambo"] = "Ambulance",
         ["firetruk6"] = "Tanker",
@@ -98,7 +98,7 @@ Config.AuthorizedVehicles = {
 	},
 	-- Grade 3
 	[5] = {
-        ["strecher"] = "Stretcher for Ambo",
+        ["stretcher"] = "Stretcher for Ambo",
         ["bat1"] = "EMS Tahoe",
 		["ramambo"] = "Ambulance",
         ["firetruk6"] = "Tanker",
@@ -113,7 +113,7 @@ Config.AuthorizedVehicles = {
 	},
 	-- Grade 4
 	[6] = {
-        ["strecher"] = "Stretcher for Ambo",
+        ["stretcher"] = "Stretcher for Ambo",
         ["bat1"] = "EMS Tahoe",
 		["ramambo"] = "Ambulance",
         ["firetruk6"] = "Tanker",

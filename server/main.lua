@@ -282,7 +282,7 @@ QBCore.Commands.Add("revivep", "Revive A Player", {}, false, function(source, ar
 	end
 end)
 
-QBCore.Commands.Add("revive", "Revive A Player or Yourself (Admin Only)", {{name="id", help="Player ID (may be empty)"}}, false, function(source, args)
+QBCore.Commands.Add("revive", "Revive A Player or Yourself", {{name="id", help="Player ID (may be empty)"}}, false, function(source, args)
 	local src = source
 	if args[1] then
 		local Player = QBCore.Functions.GetPlayer(tonumber(args[1]))
@@ -294,7 +294,7 @@ QBCore.Commands.Add("revive", "Revive A Player or Yourself (Admin Only)", {{name
 	else
 		TriggerClientEvent('hospital:client:Revive', src)
 	end
-end, "admin")
+end)
 
 QBCore.Commands.Add("setpain", "Set Yours or A Players Pain Level (Admin Only)", {{name="id", help="Player ID (may be empty)"}}, false, function(source, args)
 	local src = source
