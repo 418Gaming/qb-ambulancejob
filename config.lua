@@ -30,6 +30,9 @@ Config.Locations = {
     ["main"] = {
         [1] = vector3(298.44, -599.7, 43.29),
     },
+    ["stash"] = {
+        [1] = vector3(309.78, -596.6, 43.29),
+    },
     ["beds"] = {
         [1] = {coords = vector4(317.85, -585.22, 43.2, 343.45), taken = false, model = 1631638868},
         [2] = {coords = vector4(314.49, -584.21, 43.2, 336.98), taken = false, model = 1631638868},
@@ -622,4 +625,39 @@ Config.Weapons = {
     ["WEAPON_EXHAUSTION"] = Config.WeaponClasses['SUFFOCATING'], -- Exhaust
     ["WEAPON_BZGAS"] = Config.WeaponClasses['SUFFOCATING'],
     ["WEAPON_SMOKEGRENADE"] = Config.WeaponClasses['SUFFOCATING'],
+}
+
+Config.VehicleSettings = {
+    ["car1"] = { -- Model name
+        ["extras"] = {
+            ["1"] = false, -- on/off
+            ["2"] = true,
+            ["3"] = true,
+            ["4"] = true,
+            ["5"] = true,
+            ["6"] = true,
+            ["7"] = true,
+            ["8"] = true,
+            ["9"] = true,
+            ["10"] = true,
+            ["11"] = true,
+            ["12"] = true,
+        }
+    },
+    ["car2"] = {
+        ["extras"] = {
+            ["1"] = false,
+            ["2"] = true,
+            ["3"] = true,
+            ["4"] = true,
+            ["5"] = true,
+            ["6"] = true,
+            ["7"] = true,
+            ["8"] = true,
+            ["9"] = true,
+            ["10"] = true,
+            ["11"] = true,
+            ["12"] = true,
+        }
+    }
 }
